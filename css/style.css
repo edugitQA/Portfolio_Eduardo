@@ -585,7 +585,6 @@ body {
 }
 
 
-
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
@@ -683,15 +682,20 @@ body {
 
 
 .carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: greenyellow;
+}
+
+.carousel-caption p {
   font-size: 1.5rem;
+  color:greenyellow;
   font-weight: bold;
 }
-.carousel-caption p {
-  font-size: 1rem;
-}
 .carousel-item img {
-  max-height: 400px; /* Limita a altura da imagem */
+  max-height: 316px; /* Limita a altura da imagem */
   object-fit: cover;
+  border-radius: 10px;
 }
 
 
