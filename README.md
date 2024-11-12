@@ -24,16 +24,19 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - **Outros**:
   - Git e GitHub para versionamento e hospedagem
 
+## 📈 Próximos Passos
 
-## 📂 Estrutura de Pastas
-/meu-portfólio
-├── public
-│   ├── index.html          # HTML principal
-│   └── assets              # Arquivos estáticos (imagens, fontes, etc.)
-├── src
-│   ├── components          # Componentes de React (se aplicável)
-│   ├── styles              # Estilos (CSS, SCSS ou módulos de estilo)
-│   ├── App.js              # Componente raiz
-│   └── index.js            # Ponto de entrada do React
-├── README.md
-└── package.json            # Dependências e scripts do npm
+  - Melhorias no desig
+  - adicionar animações e interatividade
+  - atualizar o portfólio com novos projetos e funcionalidades.
+
+
+## 🤝 Contribuições
+
+Contribuições, sugestões e melhorias são bem-vindas! Para contribuir:
+
+ - Faça um fork do projeto.
+ - Crie uma nova branch (git checkout -b feature/nova-feature).
+ - Commit suas alterações (git commit -m 'Adiciona nova funcionalidade').
+ - Envie para o repositório (git push origin feature/nova-feature).
+ - Abra um Pull Request.
