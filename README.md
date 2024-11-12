@@ -21,6 +21,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - **Frontend**:
   - HTML5 e CSS3
   - JavaScript
+  - Bootstrap
 - **Outros**:
   - Git e GitHub para versionamento e hospedagem
 
