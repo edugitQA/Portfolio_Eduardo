@@ -27,7 +27,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📈 Próximos Passos
 
-  - Melhorias no desig
+  - Melhorias no designer
   - adicionar animações e interatividade
   - atualizar o portfólio com novos projetos e funcionalidades.
 
