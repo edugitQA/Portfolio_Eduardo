@@ -23,7 +23,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   - JavaScript
   - Bootstrap
 - **Outros**:
-  - Git e GitHub para versionamento e hospedagem
+  - Git e GitHub para versionamento e hospedagem.
 
 ## 📈 Próximos Passos
 
