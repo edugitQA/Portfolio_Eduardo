@@ -684,12 +684,12 @@ body {
 .carousel-caption h5 {
   font-size: 2rem;
   font-weight: bold;
-  color: greenyellow;
+  color:whitesmoke;
 }
 
 .carousel-caption p {
   font-size: 1.5rem;
-  color:greenyellow;
+  color:whitesmoke;
   font-weight: bold;
 }
 .carousel-item img {
