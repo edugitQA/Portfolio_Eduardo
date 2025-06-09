@@ -4,371 +4,633 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio|QA - Eduardo Alves </title>
+    <title>Eduardo Alves - QA Analyst & AI Automation Specialist</title>
     <link rel="shortcut icon" href="assets/images/1-81f2ae6a.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="topbar">
-        <a href="#" class="logo">
-            <img src="assets/images/Logo_dark.png" alt="Portifolio|QA"" width=" 145" height="32" class="dark">
-            <img src="assets/images/Logo_light.png" alt="Portifolio|QA"" width=" 145" height="32" class="light">
-        </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/images/logo.png" alt="Eduardo Alves" width="145" height="32">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <button class="icon-btn theme-btn" data-theme-btn>
-            <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
-            <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
-
-            <div class="state-layer"></div>
-        </button>
-    </header>
-
-    <main>
-        <article>
-            <section class="section hero">
-                <div class="container">
-                    <figure class="hero-banner img-holder" style="--width: 240; --height: 240;">
-                        <img src="assets/images/profile.png" width="240" height="240" alt="Gabriel Andrade"
-                            class="img-cover">
-                    </figure>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
                     <div class="hero-content">
-                        <span class="label-large section-subtitle">Analista de testes de software/QA</span>
-                        <h1 class="display-small">Eduardo Alves</h1>
-                        <p class="body-large section-text">
-                            QA analyst| Analista de testes (QA) | Metodologia Agil| Postman | Plsql | Cypress | Robot
-                            Framework | ERP | IA
+                        <span class="hero-subtitle">Olá, eu sou</span>
+                        <h1 class="hero-title">Eduardo Alves</h1>
+                        <div class="hero-typing">
+                            <span class="typing-text" id="typingText"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            Especialista em QA e Automação com IA, focado em garantir qualidade e inovação 
+                            através de testes automatizados, integração com sistemas inteligentes e 
+                            metodologias ágeis.
                         </p>
-
-                        <div class="btn-wrapper">
-                            <a href="mailto:eduardo.telecomrbs@gmail.com" class="chip">
-                                <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
-
-                                <span class="label-large">Gmail</span>
-                                <div class="state-layer"></div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">
+                                <span class="material-symbols-outlined me-2">work</span>
+                                Ver Projetos
                             </a>
-
-                            <a href="https://wa.me/5561998760988" class="chip" target="_blank">
-                                <span class="material-symbols-outlined" aria-hidden="true"> call </span>
-                                <span class="label-large">WhatsApp</span>
-                                <div class="state-layer"></div>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                <span class="material-symbols-outlined me-2">mail</span>
+                                Contato
                             </a>
-
+                        </div>
+                        
+                        <div class="hero-social">
+                            <a href="https://github.com/edugitQA" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/eduardo-alves95" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/eduardo.alves" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/5561998760988" target="_blank" class="social-link" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:eduardo.telecomrbs@gmail.com" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="article">
-
-                <div class="about-card">
-                    <h2 class="card-title-medium">Sobre</h2>
-
-                    <p class="body-medium card-text">
-                        Profissional apaixonado por tecnologia e conhecedor de toda a esteira de desenvolvimento, estou
-                        sempre em busca de novos desafios. Ao longo da minha trajetória, mantenho o compromisso com a
-                        excelência, focando tanto no cliente quanto no produto. Valorizo o trabalho em equipe, incentivo
-                        a criatividade e destaco minhas habilidades em comunicação, organização, adaptabilidade, empatia
-                        e resiliência.
-                    </p>
-
-                    <ul class="about-list">
-
-                        <li class="list-item">
-                            <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
-                            <span class="label-medium">Brasilia, Distrito Federal</span>
-                        </li>
-
-                        <li class="list-item">
-                            <span class="material-symbols-outlined" aria-hidden="true"> work </span>
-                            <span class="label-medium">Koerich Lab</span>
-                        </li>
-
-                        <li class="list-item">
-                            <span class="material-symbols-outlined" aria-hidden="true"> captive_portal </span>
-                            <a href="https://github.com/edugitQA" class="label-medium" target="_blank">GitHub</a></span>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-
-                    <div class="primary-tabs">
-
-                        <button class="tab-btn" data-tab-btn="project">
-                            <span class="tab-text title-small">Projetos</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
-                        <button class="tab-btn" data-tab-btn="resume">
-                            <span class="tab-text title-small">Resumo</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
-                        <button class="tab-btn" data-tab-btn="contact">
-                            <span class="tab-text title-small">Contato</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="assets/images/profile.png" alt="Eduardo Alves" class="profile-img">
+                            <div class="image-decoration"></div>
+                        </div>
+                        
+                        <div class="floating-cards">
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="200">
+                                <span class="material-symbols-outlined">psychology</span>
+                                <span>IA & Automação</span>
+                            </div>
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="400">
+                                <span class="material-symbols-outlined">bug_report</span>
+                                <span>QA Testing</span>
+                            </div>
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="600">
+                                <span class="material-symbols-outlined">integration_instructions</span>
+                                <span>API Testing</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <section class="section tab-content active" data-tab-content="project">
-                        <div class="container">
-
-                            <div class="project-list">
-
-                                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <!-- Primeiro projeto -->
-                                      <div class="carousel-item active">
-                                        <a href="https://github.com/edugitQA/Docker_robot_appium" class="state-layer" target="_blank"></a>
-                                        <img src="./assets/images/projeto1.png" class="d-block w-100" alt="Projeto 1">
-                                        <div class="carousel-caption d-none d-md-block">
-                                          <h5>Robot_appium_docker</h5>
-                                          <p>Clique e acesse</p>
-                                        </div>
-                                      </div>
-                                      <!-- Segundo projeto -->
-                                      <div class="carousel-item">
-                                        <a href="https://github.com/edugitQA/Desktop_Automacao" class="state-layer" target="_blank"></a>
-                                        <img src="./assets/images/projeto2.png" class="d-block w-100" alt="Projeto 2">
-                                        <div class="carousel-caption d-none d-md-block">
-                                          <h5>Automação Sistema PDV</h5>
-                                          <p>Clique e acesse</p>
-                                        </div>
-                                      </div>
-                                      <div class="carousel-item">
-                                        <a href="https://github.com/edugitQA/essay_analyzer" class="state-layer" target="_blank"></a>
-                                        <img src="./assets/images/projeto3.png" class="d-block w-100" alt="Projeto 2">
-                                        <div class="carousel-caption d-none d-md-block">
-                                          <h5>Analisador de Redações|AI</h5>
-                                          <p>Clique e acesse</p>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    
-                                    <!-- Botões de navegação -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
-                                  </div>
-                                  
-                            </div>
-
-
-                        </div>
-                    </section>
-
-                    <section class="section tab-content resume-tab" data-tab-content="resume">
-                        <div class="container">
-
-                            <h2 class="section-title title-small">Experiências Profissionais</h2>
-
-                            <ul class="list">
-
-                                <li class="resume-item">
-                                    <div class="resume-card">
-                                        <p class="body-large">Analista de testes de software I</p>
-                                        <p class="body-large">Koerich Lab</p>
-                                            
-                                        <span class="label-medium card-subtitle"> abril de 2024 - no momento (10
-                                            meses)</span>
-
-                                        <span class="body-medium card-text">
-                                            
-                                            <div class="content-container">
-                                                <p>Como analista de testes (QA), com experiência em soluções digitais, utilizo as seguintes ferramentas e metodologias:</p>
-                                                <ul class="item-list">
-                                                  <li>-Metodologia ágil: planning, daily, review e retrospectiva</li>
-                                                  <li>-Teste de API REST, testes de backend</li>
-                                                  <li>-Testes manuais, funcionais e exploratório</li>
-                                                  <li>-Criação de massa de teste</li>
-                                                  <li>-Jira em gerenciamento de projetos</li>
-                                                  <li>-Manipulação de banco de dados com PL/SQL</li>
-                                                  <li>-Automação de testes com Cypress</li>
-                                                  <li>-Git/GitLab para versionamento</li>
-                                                </ul>
-                                              </div>
-                                              <br>
-
-                            <h2 class="section-title title-small">Formação acadêmica</h2>
-
-                            <ul class="list">
-                          
-                                </li>
-
-                                <li class="resume-item">
-                                    <div class="resume-card">
-
-                                        <p class="body-large">
-                                            Análise e Desenvolvimento de Sistemas (Faculdade Estacio)
-                                        </p>
-
-                                        <span class="label-medium card-subtitle">fev de 2024 - jul de 2026
-                                            (Cursando)</span>
-
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <h2 class="section-title title-small">Habilidades e Tecnologias</h2>
-
-                            <ul class="resume-bottom-list">
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" alt="Java" title="Java"/></code>
-                                    <span class="label-medium">JAVA</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
-                                    <span class="label-medium">HTML</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS"/></code>
-                                    <span class="label-medium">Css</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108376-c675d39b-90f6-4073-bde6-5a9291644657.png" alt="GitLab" title="GitLab"/></code>
-                                    <span class="label-medium">Gitlab</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108890-200809d1-439c-4e23-90d3-b090cf9a4eea.png" alt="IntelliJ" title="IntelliJ"/></code>
-                                    <span class="label-medium">IntelliJ</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Visual Studio Code" title="Visual Studio Code"/></code>
-                                    <span class="label-medium">Visual Studio Code</span>
-                                </li>
-
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png" alt="Android Studio" title="Android Studio"/></code>
-                                    <span class="label-medium">Android Studio</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png" alt="Docker" title="Docker"/></code>
-                                    <span class="label-medium">Docker</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png" alt="Jira" title="Jira"/></code>
-                                    <span class="label-medium">Jira</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" alt="Postman" title="Postman"/></code>
-                                    <span class="label-medium">Postman</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/186885787-4011a347-1f68-472c-bf8b-31ed1bb4f8ce.png" alt="fedora" title="fedora"/></code>
-                                    <span class="label-medium">fedora</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma" title="Figma"/></code>
-                                    <span class="label-medium">Figma</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png" alt="PostgreSQL" title="PostgreSQL"/></code>
-                                    <span class="label-medium">PostgreSQL</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/201476821-3431d126-ae72-4c2a-a3c7-8a847070beeb.png" alt="Robot Framework" title="Robot Framework"/></code>
-                                    <span class="label-medium">Robot framework</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/68279555/200387386-276c709f-380b-46cc-81fd-f292985927a8.png" alt="Cypress" title="Cypress"/></code>
-                                    <span class="label-medium">Cypress</span>
-                                </li>
-                                <li class="resume-bottom-item">
-                                    <code><img width="50" src="https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png" alt="Ubuntu" title="Ubuntu"/></code>
-                                    <span class="label-medium">Ubunto</span>
-
-                            </ul>
-
-
-                        </div>
-                    </section>
-
-                    <section class="section tab-content contact-tab" data-tab-content="contact">
-                        <div class="container">
-
-                            <div class="contact-info">
-
-                                <h4 class="section-title title-small">Informações de Contato</h4>
-
-                                <ul class="contact-info-list">
-
-                                    <li class="contact-info-item">
-                                        <div class="icon-box">
-                                            <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
-                                        </div>
-
-                                        <div class="imfo-content">
-                                            <p class="label-small info-title">Envie-me um e-mail:</p>
-
-                                            <a href="mailto:gabrielucasdosantos@gmail.com"
-                                                class="label-small info-text">eduardo.telecomrbs@gmail.com</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="contact-info-item">
-                                        <div class="icon-box">
-                                            <span class="material-symbols-outlined" aria-hidden="true"> call </span>
-                                        </div>
-
-                                        <div class="imfo-content">
-                                            <p class="label-small info-title">Contate-me:</p>
-
-                                            <a href="https://wa.me/5581998760988" class="label-small info-text"
-                                                target="_blank">+55 61 99876-0988</a>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="contact-info-item">
-                                        <div class="icon-box">
-                                            <span class="material-symbols-outlined" aria-hidden="true"> location_on
-                                            </span>
-                                        </div>
-
-                                        <div class="imfo-content">
-                                            <p class="label-small info-title">Endereço:</p>
-
-                                            <a href="#" class="label-small info-text">Brasilia,
-                                                Distrito Federal</a>
-                                        </div>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
-        </article>
-    </main>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Conheça minha trajetória e paixão por tecnologia
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3>QA Analyst & AI Automation Specialist</h3>
+                        <p>
+                            Profissional apaixonado por tecnologia e conhecedor de toda a esteira de 
+                            desenvolvimento, estou sempre em busca de novos desafios. Como Analista de 
+                            Qualidade de Software, minha atuação vai além da detecção de falhas: sou um 
+                            facilitador da eficiência, inovação e escalabilidade em produtos digitais.
+                        </p>
+                        <p>
+                            Com sólida experiência em QA funcional, testes automatizados e integração 
+                            com soluções de IA, aplico uma abordagem moderna e estratégica para garantir 
+                            a entrega de softwares robustos e alinhados aos objetivos do negócio.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Brasília, Distrito Federal</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="material-symbols-outlined">work</span>
+                                <span>Koerich Lab</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="material-symbols-outlined">school</span>
+                                <span>Especialista em QA & IA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="stats-grid">
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-icon">
+                                <span class="material-symbols-outlined">trending_up</span>
+                            </div>
+                            <div class="stat-content">
+                                <h4>2+</h4>
+                                <p>Anos de Experiência</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-icon">
+                                <span class="material-symbols-outlined">code</span>
+                            </div>
+                            <div class="stat-content">
+                                <h4>10+</h4>
+                                <p>Tecnologias</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon">
+                                <span class="material-symbols-outlined">psychology</span>
+                            </div>
+                            <div class="stat-content">
+                                <h4>5+</h4>
+                                <p>Projetos com IA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-icon">
+                                <span class="material-symbols-outlined">verified</span>
+                            </div>
+                            <div class="stat-content">
+                                <h4>100%</h4>
+                                <p>Qualidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Habilidades & Tecnologias</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Especializado em QA, Automação e Inteligência Artificial
+                    </p>
+                </div>
+            </div>
+            
+            <div class="skills-categories">
+                <!-- AI & Automation -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <span class="material-symbols-outlined">psychology</span>
+                        IA & Automação
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🤖</div>
+                            <h4>RAG Systems</h4>
+                            <p>Retrieval-Augmented Generation para chatbots inteligentes</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔗</div>
+                            <h4>n8n Workflows</h4>
+                            <p>Automação low-code para processos complexos</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">💬</div>
+                            <h4>GPT Integration</h4>
+                            <p>Integração com modelos de linguagem avançados</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎯</div>
+                            <h4>Agentes Autônomos</h4>
+                            <p>Desenvolvimento de bots para WhatsApp e outras plataformas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- QA & Testing -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <span class="material-symbols-outlined">bug_report</span>
+                        QA & Testing
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h4>Cypress</h4>
+                            <p>Testes automatizados end-to-end para aplicações web</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🤖</div>
+                            <h4>Robot Framework</h4>
+                            <p>Framework de automação para testes funcionais</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📡</div>
+                            <h4>API Testing</h4>
+                            <p>Validação de APIs com Postman e ferramentas especializadas</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔍</div>
+                            <h4>Testes Funcionais</h4>
+                            <p>Validação manual e exploratória de sistemas complexos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development & Tools -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <span class="material-symbols-outlined">code</span>
+                        Desenvolvimento & Ferramentas
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <h4>SQL/PL-SQL</h4>
+                            <p>Consultas complexas e análise de dados</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📊</div>
+                            <h4>Jira</h4>
+                            <p>Gestão de projetos e acompanhamento de bugs</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔄</div>
+                            <h4>Metodologias Ágeis</h4>
+                            <p>Scrum, Kanban e práticas de desenvolvimento ágil</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🏢</div>
+                            <h4>Sistemas ERP</h4>
+                            <p>Testes em sistemas empresariais complexos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Experiência Profissional</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Minha jornada profissional em QA e IA
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Analista de teste/QA</h3>
+                            <span class="company">Koerich Lab</span>
+                            <span class="period">Abr 2024 - Presente</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Atuo na garantia da qualidade de um sistema ERP com foco em testes funcionais, 
+                                validação de processos críticos e entrega de soluções confiáveis e escaláveis.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>Automação de testes com Cypress, aumentando cobertura e eficiência</li>
+                                <li>Monitoramento e análise de logs em ambiente produtivo</li>
+                                <li>Criação de consultas PL/SQL para análise de dados e validação</li>
+                                <li>Gestão de massa de testes complexas para múltiplos fluxos</li>
+                                <li>Atuação com metodologias ágeis (Scrum e Kanban)</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Cypress</span>
+                                <span class="tag">PL/SQL</span>
+                                <span class="tag">Jira</span>
+                                <span class="tag">ERP</span>
+                                <span class="tag">Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Gestor de automação IA</h3>
+                            <span class="company">MarshallFilms</span>
+                            <span class="period">Abr 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Participei da estruturação e alimentação da base de conhecimento de um 
+                                agente de IA (RAG) voltado para lançamentos digitais.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>Desenvolvimento de agente IA para WhatsApp</li>
+                                <li>Estruturação de base de conhecimento RAG</li>
+                                <li>Automação de interações com usuários</li>
+                                <li>Integração com sistemas de lançamentos digitais</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">RAG</span>
+                                <span class="tag">WhatsApp Bot</span>
+                                <span class="tag">IA Generativa</span>
+                                <span class="tag">Automação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Alguns dos meus trabalhos mais relevantes
+                    </p>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/images/project-rag.jpg" alt="RAG WhatsApp Bot">
+                    </div>
+                    <div class="project-content">
+                        <h3>RAG WhatsApp Bot</h3>
+                        <p>
+                            Agente de IA autônomo para WhatsApp com base de conhecimento RAG, 
+                            desenvolvido para lançamentos digitais da MarshallFilms.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">RAG</span>
+                            <span class="tag">WhatsApp API</span>
+                            <span class="tag">IA Generativa</span>
+                            <span class="tag">n8n</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/images/project-cypress.jpg" alt="Automação Cypress">
+                    </div>
+                    <div class="project-content">
+                        <h3>Automação de Testes ERP</h3>
+                        <p>
+                            Suite completa de testes automatizados para sistema ERP, 
+                            incluindo validação de processos críticos e integração contínua.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Cypress</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">ERP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <span class="material-symbols-outlined">code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/images/project-api.jpg" alt="API Testing Framework">
+                    </div>
+                    <div class="project-content">
+                        <h3>Framework de Testes de API</h3>
+                        <p>
+                            Framework robusto para testes automatizados de APIs, 
+                            com validação de contratos e monitoramento de performance.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Postman</span>
+                            <span class="tag">Newman</span>
+                            <span class="tag">API Testing</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Vamos Conversar?</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Estou sempre aberto a novos desafios e oportunidades
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form" data-aos="fade-up">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="name">Nome</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span class="material-symbols-outlined me-2">send</span>
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="material-symbols-outlined">mail</span>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>eduardo.telecomrbs@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="material-symbols-outlined">phone</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(61) 99876-0988</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Brasília, DF - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="body-medium">Copyright 2024. Todos os direitos reservados por Eduardo Alves</p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-social">
+                        <a href="https://github.com/edugitQA" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/eduardo-alves95" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/eduardo.alves" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5561998760988" target="_blank" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:eduardo.telecomrbs@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="footer-text">
+                        © 2024 Eduardo Alves. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
