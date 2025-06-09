@@ -2,7 +2,7 @@
 
 Bem-vindo ao meu portfólio de projetos! Este repositório irá conter uma coleção dos meus principais projetos e servirá como uma apresentação visual das minhas habilidades, experiência e interesses na área de testes de software e tecnologia.
 
-![Screenshot do Portfólio](./assets/images/screenshot.png)
+![Screenshot do Portfólio](./assets/images/portfolio.png)
 
 ## 🎯 Objetivo
 
