@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
     
+    if (!themeToggle) return; // Evita erro se o botão não existir
+    
     // Check for saved theme preference or default to 'dark'
     const currentTheme = localStorage.getItem('theme') || 'dark';
     html.setAttribute('data-theme', currentTheme);
@@ -18,8 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function updateThemeIcon(theme) {
+        if (!themeToggle) return; // Evita erro se o botão não existir
         const icon = themeToggle.querySelector('.material-symbols-outlined');
-        icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+        if (icon) {
+            icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+        }
     }
 });
 
