@@ -793,19 +793,18 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     opacity: 0;
     transition: opacity var(--transition-normal);
+    pointer-events: none; /* Remover esta linha para permitir clique */
 }
 
 .project-card:hover .project-overlay {
     opacity: 1;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.1);
+    pointer-events: auto; /* Garantir que overlay aceite eventos ao hover */
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
+    z-index: 2;
 }
 
 .project-link {
@@ -819,6 +818,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-decoration: none;
     transition: all var(--transition-normal);
+    cursor: pointer;
 }
 
 .project-link:hover {

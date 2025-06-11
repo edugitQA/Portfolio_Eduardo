@@ -173,35 +173,63 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(createParticle, 1000);
 });
 
-// Contact Form
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name') || document.getElementById('name').value;
-            const email = formData.get('email') || document.getElementById('email').value;
-            const subject = formData.get('subject') || document.getElementById('subject').value;
-            const message = formData.get('message') || document.getElementById('message').value;
-            
-            // Create mailto link
-            const mailtoLink = `mailto:eduardo.telecomrbs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            showNotification('Mensagem enviada! Seu cliente de email foi aberto.', 'success');
-            
-            // Reset form
-            this.reset();
-        });
+// Validação do formulário de contato
+function validarFormularioContato() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    let valid = true;
+    let errorMsg = '';
+    if (!name || !email || !subject || !message) {
+        valid = false;
+        errorMsg = 'Por favor, preencha todos os campos obrigatórios.';
     }
-});
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email && !emailPattern.test(email)) {
+        valid = false;
+        errorMsg = 'Por favor, insira um e-mail válido.';
+    }
+    return { valid, errorMsg };
+}
+
+// Exibe mensagens de sucesso/erro do formulário
+function mostrarMensagemContato(tipo, mensagem) {
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+    if (tipo === 'sucesso') {
+        successMessage.textContent = mensagem;
+        successMessage.classList.remove('d-none');
+        errorMessage.classList.add('d-none');
+    } else if (tipo === 'erro') {
+        errorMessage.textContent = mensagem;
+        errorMessage.classList.remove('d-none');
+        successMessage.classList.add('d-none');
+    } else {
+        successMessage.classList.add('d-none');
+        errorMessage.classList.add('d-none');
+    }
+}
+
+// Manipula o envio do formulário
+const formContato = document.getElementById('contactForm');
+if (formContato) {
+    formContato.addEventListener('submit', function (e) {
+        const validacao = validarFormularioContato();
+        if (!validacao.valid) {
+            e.preventDefault();
+            mostrarMensagemContato('erro', validacao.errorMsg);
+            return false;
+        } else {
+            mostrarMensagemContato(); // Limpa mensagens
+        }
+    });
+}
+
+// Exibe mensagem de sucesso se houver parâmetro de sucesso na URL (FormSubmit)
+if (window.location.search.includes('success')) {
+    mostrarMensagemContato('sucesso', 'Mensagem enviada com sucesso! Obrigado pelo contato.');
+}
 
 // Notification System
 function showNotification(message, type = 'info') {
