@@ -23,12 +23,10 @@ Este portfólio tem como objetivo demonstrar minha expertise em QA, automação 
 
 ### Outros
 - Git e GitHub para versionamento e hospedagem
-- Ferramentas de automação e testes
 
 ## 📈 Próximos Passos
 
 - Melhorias no design e interatividade
-- Adicionar animações e efeitos visuais
 - Atualizar o portfólio com novos projetos e funcionalidades
 
 ## 🤝 Contribuições
