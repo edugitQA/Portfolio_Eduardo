@@ -602,6 +602,30 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
+
+.skill-icon.material-symbols-outlined,
+.material-symbols-outlined.skill-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+/* Realce mais forte no hover para ícones */
+.skill-card:hover .skill-icon img {
+    transform: scale(1.05);
+    transition: transform var(--transition-fast);
+}
+
+.skill-card:hover .material-symbols-outlined.skill-icon {
+    transform: scale(1.05);
+    transition: transform var(--transition-fast);
+}
+
 .skill-card h4 {
     font-size: 1.125rem;
     font-weight: 600;
@@ -781,6 +805,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform var(--transition-slow);
 }
 
+/* Torna o overlay clicável apenas quando visível */
 .project-overlay {
     position: absolute;
     top: 0;
@@ -793,12 +818,19 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     opacity: 0;
     transition: opacity var(--transition-normal);
-    pointer-events: none; /* Remover esta linha para permitir clique */
+    pointer-events: none; /* Overlay não captura eventos quando oculto */
 }
 
-.project-card:hover .project-overlay {
+.project-card:hover .project-overlay,
+.project-card:focus-within .project-overlay {
     opacity: 1;
-    pointer-events: auto; /* Garantir que overlay aceite eventos ao hover */
+    pointer-events: auto; /* Aceita eventos quando visível (hover/teclado) */
+}
+
+/* Efeito de zoom na imagem quando o card está ativo */
+.project-card:hover .project-image img,
+.project-card:focus-within .project-image img {
+    transform: scale(1.05);
 }
 
 .project-links {
@@ -819,12 +851,24 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     transition: all var(--transition-normal);
     cursor: pointer;
+    outline: none;
 }
 
 .project-link:hover {
     background: var(--secondary-color);
     transform: scale(1.1);
     color: white;
+}
+
+/* Acessibilidade: estilo de foco visível */
+.project-link:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.35);
+}
+
+/* Realce no card quando focado via teclado */
+.project-card:focus-within {
+    box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.35);
+    border-color: var(--primary-color);
 }
 
 .project-content {
@@ -839,6 +883,11 @@ h1, h2, h3, h4, h5, h6 {
 .project-content p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4; /* Compatibilidade */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .project-tags {

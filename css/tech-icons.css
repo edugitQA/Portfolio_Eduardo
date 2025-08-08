@@ -1,0 +1,18 @@
+/* Icones personalizados e utilitários para stacks tecnológicas */
+.tech-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: -3px;
+}
+
+.icon-work { background: url('../assets/images/work.svg') no-repeat center/contain; }
+.icon-email { background: url('../assets/images/mail.svg') no-repeat center/contain; }
+
+/* Ajustes para imagens dentro de botões/link sociais (já existem SVGs em assets/images) */
+.footer .social-link img,
+.hero-social .social-link img {
+  width: 22px;
+  height: 22px;
+}
